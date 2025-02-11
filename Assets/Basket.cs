@@ -50,7 +50,7 @@ public class Basket : MonoBehaviour
         {
             Destroy(collidedWith);  // Destroy the apple
             scoreCounter.score += 100;  // Increment the score by 100
-            Debug.Log("Apple collided! Score: " + scoreCounter.score);  // Debug log for score change
+            HighScore.TRY_SET_HIGH_SCORE( scoreCounter.score );
         }
     }
 }
