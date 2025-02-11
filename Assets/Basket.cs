@@ -5,7 +5,6 @@ using TMPro;  // No changes needed here, we're using TextMeshPro components in S
 
 public class Basket : MonoBehaviour
 {
-    [Header("Set Dynamically")]
     public ScoreCounter scoreCounter;  // Reference to ScoreCounter component for score management
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
