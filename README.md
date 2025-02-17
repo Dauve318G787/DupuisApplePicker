@@ -1,8 +1,8 @@
 ## Project 1: Apple Picker
 
-# Project Contributors: David Dupuis
-# Course: CS382
-# Instructor: Gavin Witsken
+Project Contributors: David Dupuis
+Course: CS382
+Instructor: Gavin Witsken
 
 ## Project Description
 
