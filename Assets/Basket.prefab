@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreCounter: {fileID: 0}
+  gameOverScreen: {fileID: 0}
 --- !u!114 &4390786040534196233
 MonoBehaviour:
   m_ObjectHideFlags: 0

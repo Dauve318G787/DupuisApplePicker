@@ -61,15 +61,22 @@ public class RoundCounterManager : MonoBehaviour
     private void GameOver()
     {
         gameOver = true; // Set the game over flag to true
-        roundCounterText.text = "Game Over"; // Round counter text becomes Game Over
+        roundCounterText.text = "Round 4 has been reached! Your game is now over."; // Round counter text becomes Game Over
         
         // Show the restart button
         restartButton.SetActive(true); // Display the Restart button
+
+        // Freeze the game (pause time)
+        Time.timeScale = 0f;
     }
 
     // This method will restart the game when the restart button is clicked
     public void RestartGame()
     {
+
+        // Unfreeze the game (resume time)
+        Time.timeScale = 1f;
+        
         // Reload the current scene to restart the game
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }

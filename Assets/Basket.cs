@@ -52,5 +52,13 @@ public class Basket : MonoBehaviour
             scoreCounter.score += 100;  // Increment the score by 100
             HighScore.TRY_SET_HIGH_SCORE( scoreCounter.score );
         }
+
+        // If the basket collides with a "BadApple"
+        if (collidedWith.CompareTag("BadApple"))
+        {
+            Destroy(collidedWith);  // Destroy the bad apple
+            scoreCounter.score = 0;
+        }
     }
+
 }

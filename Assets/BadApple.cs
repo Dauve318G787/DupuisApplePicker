@@ -2,24 +2,22 @@ using UnityEngine;
 
 public class BadApple : MonoBehaviour
 {
-    private GameManager gameManager; // Reference to the GameManager to end the game
+    private GameManager gameManager;
 
     void Start()
     {
-        // Get the reference to the GameManager
+        // Find the GameManager object in the scene
         gameManager = Object.FindFirstObjectByType<GameManager>();
-
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if the BadApple collided with the Basket
-        if (other.CompareTag("Basket"))  // Ensure the Basket has the "Basket" tag
+        // Check if the Bad Apple collides with the Basket (assuming the Basket has the "Basket" tag)
+        if (other.CompareTag("Basket"))
         {
-            // Notify the GameManager that the game is over
+            // Trigger Game Over
             gameManager.GameOver();
-            
-            // Optionally, destroy the bad apple object
+            // Destroy the bad apple object after collision
             Destroy(gameObject);
         }
     }
