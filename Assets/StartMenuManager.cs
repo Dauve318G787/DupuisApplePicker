@@ -1,3 +1,5 @@
+// MODULE PURPOSE: This script handles the start menu, which appears before the game commences.
+
 using UnityEngine;
 using UnityEngine.SceneManagement;  // For changing scenes
 

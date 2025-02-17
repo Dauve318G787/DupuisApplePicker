@@ -1,3 +1,5 @@
+// MODULE PURPOSE: This script handles events pertaining to the Apple Tree object in the game.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

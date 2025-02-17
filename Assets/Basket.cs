@@ -1,7 +1,9 @@
+//MODULE PURPOSE: This script handles all events pertaining to the basket in the game.
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;  // No changes needed here, we're using TextMeshPro components in ScoreCounter
+using TMPro;
 
 public class Basket : MonoBehaviour
 {
@@ -45,7 +47,7 @@ public class Basket : MonoBehaviour
     {
         GameObject collidedWith = coll.gameObject;
 
-        // If the basket collides with an object tagged as "Apple", destroy the apple and update the score
+        // If the basket collides with an object tagged as "Apple"...
         if (collidedWith.CompareTag("Apple"))
         {
             Destroy(collidedWith);  // Destroy the apple
@@ -53,11 +55,11 @@ public class Basket : MonoBehaviour
             HighScore.TRY_SET_HIGH_SCORE( scoreCounter.score );
         }
 
-        // If the basket collides with a "BadApple"
+        // If the basket collides with a BadApple...
         if (collidedWith.CompareTag("BadApple"))
         {
             Destroy(collidedWith);  // Destroy the bad apple
-            scoreCounter.score = 0;
+            scoreCounter.score = 0; // Set score equal to zero
         }
     }
 

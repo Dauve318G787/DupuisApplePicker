@@ -1,3 +1,5 @@
+// MODULE PURPOSE: This script updates the round counter as the game is being played.
+
 using UnityEngine;
 using TMPro; // Import TextMeshPro namespace
 using UnityEngine.SceneManagement; // For scene reloading
